@@ -1,0 +1,42 @@
+body{
+    font-family: "Inter", sans-serif;
+}
+.container {
+  @apply mx-auto px-4;
+}
+.theme-btn {
+  @apply bg-linear-80 from-blue-800 to-blue-500 text-white px-7 py-3 rounded hover:bg-linear-80 hover:from-blue-500 hover:to-blue-800 transition duration-500;
+}
+.theme-btn-two {
+  @apply bg-transparent border border-white text-white px-7 py-3 rounded  hover:bg-white hover:text-blue-800 transition duration-500;
+}
+.title{
+  @apply text-4xl text-slate-900 font-bold leading-12;
+}
+.sub-title{
+  @apply text-blue-800 text-[14px] font-bold uppercase;
+}
+.inner-title{
+  @apply text-lg font-medium text-slate-900;
+}
+ 
+
+@theme {
+--animate-upDown: upDown 1s ease-in-out infinite;
+@keyframes upDown {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-15px);
+  }
+}
+}
+
+.overlay{
+  @apply absolute inset-0 bg-blue-950/80;
+}
+
+
+
