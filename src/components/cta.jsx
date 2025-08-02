@@ -4,7 +4,7 @@ import CountUp from 'react-countup';
 
 export default function Cta() {
   return (
-    <div className='container '>
+    <div className='container relative'>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
             {counterData.map((item,index)=>{
                 return(

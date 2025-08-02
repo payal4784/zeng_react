@@ -20,7 +20,7 @@ export default function HomeTwo() {
       <NavLight/>
       <BannerTwo/>
 
-      <section>
+      <section className='relative -top-25'>
         <Feature/>
       </section>
 

@@ -1,17 +1,18 @@
 .navbar {
-  @apply py-2 w-full fixed start-0 end-0 top-0 bg-white md:bg-transparent transition duration-500 z-999;
+  @apply py-3 w-full fixed start-0 end-0 top-0 bg-white md:bg-transparent transition duration-500 z-999;
   &.tagline{
       @apply md:top-[45px];
   }
   &.is-sticky{
-    @apply bg-white shadow shadow-gray-100;
+    @apply bg-white shadow shadow-gray-100 top-0;
   }
  
   .nav-logo img {
     @apply max-w-full;
   }
+
   .nav-manu{
-      @apply absolute md:static top-18 bg-white md:bg-transparent start-0 end-0;
+      @apply absolute md:static top-18 start-0 end-0;
       ul{
           @apply block md:flex  gap-5 p-4 md:p-0;
           .nav-link{
@@ -72,5 +73,8 @@
         }
      }
     }
+  }
+  &.navdark{
+    @apply bg-white;
   }
 }

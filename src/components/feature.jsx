@@ -4,7 +4,7 @@ import { feature } from '../data/data'
 export default function Feature() {
   return (
     <div className='container'>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 relative -top-25">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 ">
             {feature.slice(0,4).map((item,index)=>{
                 let Icon = item.icon
                 return(
